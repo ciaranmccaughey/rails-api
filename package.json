@@ -5,7 +5,6 @@
   "scripts": {
     "build": "BUILD_PATH='./dist' npx react-scripts build && rm -rf public && mv dist public",
     "watch": "npx yarn run build --watch"
-
   },
   "dependencies": {
     "@babel/core": "^7.17.0",

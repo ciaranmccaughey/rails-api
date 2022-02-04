@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## My steps for install:
+## Rails
+```
+rails new rails-api -d postgresql
+```
+## React
+```
+npm i
+```
+To build react files:
+```
+yarn run build
+```
+The above command builds the react files and replaces the public folder.
 
-Things you may want to cover:
+Files of interest:
+## Models
+`/app/models/article.rb`
+## Controllers
+`/app/controllers/articles_controllers.rb`
+## Views (Partials)
+```
+/app/articles/index.json.jbuilder
+/app/articles/_article_item.json.jbuilder
+```
+## Mutations
+```
+/app/mutations/index.rb
+/app/mutations/show.rb
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Testing
+```
+/spec/models/article_spec.rb
+/spec/requests/article_spec.rb
+/spec/routing/article_spec.rb
+```
